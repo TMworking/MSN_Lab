@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(102,38): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(106,29): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(120,28): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(341,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(357,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\stm_0\source\repos\PolinomLab\PolinomLab\main.cpp(397,143): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+  PolinomLab.vcxproj -> C:\Users\stm_0\source\repos\PolinomLab\x64\Debug\PolinomLab.exe
