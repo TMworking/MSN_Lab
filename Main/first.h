@@ -12,6 +12,32 @@ struct Edge {
 	Edge(int a = 0, int b = 0, int c = 0) : start(a), weight(b), end(c) {};
 };
 
+struct dsuR {
+	vector<int> leader;
+
+	dsuR(int n) {
+		leader.resize(n);
+		for (int i = 0; i < n; i++) {
+			leader[i] = i;
+		}
+	}
+
+	int find(int n) {
+		if (leader[n] == n)
+			return n;
+		return find(leader[n]);
+	}
+
+	void join(int a, int b) {
+		int leader_a = find(a);
+		int leader_b = find(b);
+
+		if (leader_a != leader_b) {
+			leader[leader_a] = leader_b;
+		}
+	}
+};
+
 struct dsu
 {
 	vector <int> leader;
@@ -173,7 +199,8 @@ public:
 			if (graph[i].start > num)
 				num = graph[i].start;
 		}
-		dsu d(num + 1);
+		//dsu d(num + 1);
+		dsuR d(num + 1);
 		for (int i = 0; i < graph.size(); i++) {
 			if (d.find(graph[i].start) != d.find(graph[i].end)) {
 				d.join(graph[i].start, graph[i].end);
